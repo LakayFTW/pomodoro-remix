@@ -1,0 +1,36 @@
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.place-content-center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.place-content-center-y {
+    display: flex;
+    justify-content: center;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
