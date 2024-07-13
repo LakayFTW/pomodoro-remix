@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--Background);
+    font-family: "Ubuntu Mono";
 }
 
 .header {
@@ -23,14 +24,17 @@ input {
     height: 3rem;
     border: 1px;
     background-color: var(--Secondary);
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 3px;
     color: var(--Text);
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: var(--Secondary);
+    box-shadow: 0 0 10px var(--Accent);
 }
 
 button {
@@ -47,8 +51,19 @@ button:hover {
     transform: translateY(-10px);
 }
 
-.text {
+p {
     color: var(--Text);
     font-weight: bold;
-    font-size: 15px;
+    /* font-size: 20px; */
+}
+
+label {
+    color: var(--Text);
+    font-weight: bold;
+}
+
+.task-container {
+    background-color: var(--Secondary);
+    border-radius: 20px;
+    padding: 10px;
 }
