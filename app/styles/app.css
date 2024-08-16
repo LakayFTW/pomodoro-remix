@@ -16,8 +16,13 @@ body {
     font-weight: bold;
     letter-spacing: -1px;
     color: var(--Text);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+}
+
+.subheader {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--Primary);
 }
 
 input {

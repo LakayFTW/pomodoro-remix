@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import type { MetaFunction } from "@remix-run/node";
 import CustomInput from "../components/Input";
+import Nav from "~/components/Nav";
+import BareButton from "~/components/Buttons/BareButton";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,11 +14,15 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="flex flex-col w-full justfy-center">
-      <div className="flex justify-center w-full">
-        <p className="header">Pomodoro</p>
+      <Nav></Nav>
+      <div className="flex flex-col items-center justify-center w-full">
+        <p className="header">OpenChrono</p>
+        <p className="p-2 -mt-6 subheader">The Open Source Pomodoro App</p>
       </div>
       <div className="flex flex-col items-center space-y-10" data-controller="task">
-        <button data-action="click->task#create">New Task</button>
+        <div data-action=" click->task#create">
+          <BareButton className="w-64 h-16 text-2xl">New Task</BareButton>
+        </div>
         <CustomInput labelText="New Task" dataTarget="inputName"></CustomInput>
         <CustomInput labelText="New Desc" dataTarget="inputDesc"></CustomInput>
         {/* <Task name="Task" desc="Desc"></Task> */}
