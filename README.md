@@ -1,3 +1,9 @@
+# Debug
+If it wont start
+
+> nvm use 20
+
+
 # Welcome to Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
